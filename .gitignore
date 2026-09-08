@@ -1,0 +1,12 @@
+# локальные скриншоты (не для шаринга)
+screenshots/
+
+# macOS
+.DS_Store
+
+# python
+__pycache__/
+*.pyc
+
+# локальное состояние Obsidian
+obsidian-vault/.obsidian/workspace.json
