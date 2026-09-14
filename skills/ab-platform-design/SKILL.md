@@ -32,6 +32,5 @@ description: Проектирование и устройство платфор
 - ёмкость: прогноз тестов/квартал из трафика и средних MDE; buy vs build (вендор за недели vs своя под свои данные)
 
 ## Углубление
-- `../../course/content/M7/lesson-7.1.md` … `lesson-7.4.md` — весь блок
-- Research с кейсами Google/LinkedIn/Uber/Avito: `../../materials/web/research-ab-platform.md`
+- `../../course/content/M7/lesson-7.1.md` … `lesson-7.4.md` — весь блок (кейсы Google/LinkedIn/Uber/Avito внутри уроков)
 - Практики: сплит-сервис `../../course/content/M7/practice_7_1.py`, ExperimentPlatform `practice_7_3.py`, планировщик календаря `practice_7_4.py`

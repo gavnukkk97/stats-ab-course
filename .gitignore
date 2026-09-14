@@ -10,3 +10,7 @@ __pycache__/
 
 # локальное состояние Obsidian
 obsidian-vault/.obsidian/workspace.json
+
+# материалы с конспектами — только локально, не публикуются
+materials/
+obsidian-vault/Материалы/
