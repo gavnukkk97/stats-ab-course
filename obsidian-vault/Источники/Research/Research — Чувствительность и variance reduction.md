@@ -12,6 +12,6 @@ tags: [аб, чувствительность, research]
 
 Закрывает: [[CUPED]], [[CUPAC]], [[ML variance reduction]], [[Стратификация]], [[Пост-стратификация]], [[Мощность]].
 
-Полный текст: [[research-sensitivity]] (копия в Материалы/). Ключевые статьи отдельными заметками: [[Deng, Xu, Kohavi, Walker — CUPED (WSDM 2013)]], [[DoorDash — CUPAC]], [[Poyarkov et al — BDT adjustment (Yandex)]], [[Lin — Agnostic Notes (2013)]].
+Полный текст: неопубликованный авторский конспект (не доступен в репозитории) (копия в Материалы/). Ключевые статьи отдельными заметками: [[Deng, Xu, Kohavi, Walker — CUPED (WSDM 2013)]], [[DoorDash — CUPAC]], [[Poyarkov et al — BDT adjustment (Yandex)]], [[Lin — Agnostic Notes (2013)]].
 
 Модули: [[М3 Статистика для АБ]] (уроки 3.4–3.5), [[М4 АБ на практике]].

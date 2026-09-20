@@ -1,0 +1,304 @@
+{
+  "python": "3.13.12 (v3.13.12:1cbe4818347, Feb  3 2026, 13:36:53) [Clang 16.0.0 (clang-1600.0.26.6)]",
+  "packages": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "pandas": "2.2.3",
+    "matplotlib": "3.10.8",
+    "statsmodels": "0.14.6",
+    "pymc": "5.28.5",
+    "arviz": "0.23.4",
+    "pytest": "9.0.2"
+  },
+  "practices": [
+    {
+      "path": "course/modules/M1/practice/practice_1_1.py",
+      "exit_code": 0,
+      "seconds": 1.57,
+      "sha256": "3f74ecd8557c4a3e63c0b8f7a84ce5807f5e5cfb20dd2da3f2b376c88085cf66"
+    },
+    {
+      "path": "course/modules/M1/practice/practice_1_2.py",
+      "exit_code": 0,
+      "seconds": 1.97,
+      "sha256": "28c19bf360df8a176782de298776463122130fbf1145114d3781b123d235682d"
+    },
+    {
+      "path": "course/modules/M1/practice/practice_1_3.py",
+      "exit_code": 0,
+      "seconds": 1.57,
+      "sha256": "ecfddbb0e3f205666d89b072e043ef5d4d15aa31c73a86214442915b6757a0ed"
+    },
+    {
+      "path": "course/modules/M1/practice/practice_1_4.py",
+      "exit_code": 0,
+      "seconds": 2.47,
+      "sha256": "8440834faf8dfa6fa6aba8d7b0fa0e8c5834bfbada088259eab1e0b5200007da"
+    },
+    {
+      "path": "course/modules/M2/practice/practice_2_1.py",
+      "exit_code": 0,
+      "seconds": 3.53,
+      "sha256": "01db6271cd0dd2992c4a174cfae889d48823e470e55d9246417b8df4fa3760cd"
+    },
+    {
+      "path": "course/modules/M2/practice/practice_2_2.py",
+      "exit_code": 0,
+      "seconds": 2.22,
+      "sha256": "b113e3309b23b388d7b91bd6a929537b50f6ddde697c50688946a3a6c5aaea4c"
+    },
+    {
+      "path": "course/modules/M2/practice/practice_2_3.py",
+      "exit_code": 0,
+      "seconds": 8.29,
+      "sha256": "f8b240217883e1df1e6a5303e5b97db66c626e6249211d8c61eacb4277e209c5"
+    },
+    {
+      "path": "course/modules/M2/practice/practice_2_4.py",
+      "exit_code": 0,
+      "seconds": 1.3,
+      "sha256": "8cf785875e0287e5dcd001e17db892d9fa63d7f7954d8c84b93c8c001563686f"
+    },
+    {
+      "path": "course/modules/M2/practice/practice_2_5.py",
+      "exit_code": 0,
+      "seconds": 5.32,
+      "sha256": "dabb56a0cd48b08b5b6332b8f1588ab766419470ccb24b3139da2d1f308f4e16"
+    },
+    {
+      "path": "course/modules/M3/practice/practice_3_1.py",
+      "exit_code": 0,
+      "seconds": 1.82,
+      "sha256": "2215d7229b87c5a8b460cb0433941c4d0eb1f8c65ebc84bcad2895266deb43eb"
+    },
+    {
+      "path": "course/modules/M3/practice/practice_3_2.py",
+      "exit_code": 0,
+      "seconds": 2.82,
+      "sha256": "c6b0a9a6be2f0d5262bc427a757e3b319d3a07aef50e3670cb60b03f1a2c2183"
+    },
+    {
+      "path": "course/modules/M3/practice/practice_3_3.py",
+      "exit_code": 0,
+      "seconds": 9.28,
+      "sha256": "a3e8c4c27192bbafe04abcd5e798cc06713d7312e76076ace2be9882357065ec"
+    },
+    {
+      "path": "course/modules/M3/practice/practice_3_4.py",
+      "exit_code": 0,
+      "seconds": 9.62,
+      "sha256": "0e3f7257a8a0c42a4744b5471b83d6ec350e10b937bed3f7f7e105809af96cff"
+    },
+    {
+      "path": "course/modules/M3/practice/practice_3_5.py",
+      "exit_code": 0,
+      "seconds": 3.35,
+      "sha256": "50a7c75e024af8e8829b0e91a698124d7e6a57885a28f79830e8d2821d77531f"
+    },
+    {
+      "path": "course/modules/M3/practice/practice_3_6.py",
+      "exit_code": 0,
+      "seconds": 6.09,
+      "sha256": "ab11dc53719b63fd55c56a21d132d938a621b707af9daf040e7c455bfe16695b"
+    },
+    {
+      "path": "course/modules/M3/practice/practice_3_7.py",
+      "exit_code": 0,
+      "seconds": 1.58,
+      "sha256": "35185db3c6e02bdb0a9a870e9e458a3cd118c907a85a1e40876024c0559569b0"
+    },
+    {
+      "path": "course/modules/M4/practice/practice_4_1.py",
+      "exit_code": 0,
+      "seconds": 1.07,
+      "sha256": "20a4e7c9d0bf76d1349cfa0e5f15df63f3cccfeb0947ffaa02491e15da5b1fe4"
+    },
+    {
+      "path": "course/modules/M4/practice/practice_4_2.py",
+      "exit_code": 0,
+      "seconds": 1.82,
+      "sha256": "ed9d79859c2e1af95e9648a971385c8778e4ea2c4023133c77d60644879a1871"
+    },
+    {
+      "path": "course/modules/M4/practice/practice_4_3.py",
+      "exit_code": 0,
+      "seconds": 1.66,
+      "sha256": "751fffcae5a6d47234a34225ff37599490a92b195cfa979adc14b4cfd4d5adbb"
+    },
+    {
+      "path": "course/modules/M4/practice/practice_4_4.py",
+      "exit_code": 0,
+      "seconds": 1.44,
+      "sha256": "1f391a65b652cc1905903cbed3f589839723cba89bd924a579600f0df55427ef"
+    },
+    {
+      "path": "course/modules/M4/practice/practice_4_5.py",
+      "exit_code": 0,
+      "seconds": 1.29,
+      "sha256": "19d370e59b86f3550150b2fdba57fe606a344a847a03f4f6a5253756102757ed"
+    },
+    {
+      "path": "course/modules/M5/practice/practice_5_1.py",
+      "exit_code": 0,
+      "seconds": 1.18,
+      "sha256": "5d53da8db774e46a234750c3f6f180e8dd23feea48ca5590609da1c6274f16c9"
+    },
+    {
+      "path": "course/modules/M5/practice/practice_5_2.py",
+      "exit_code": 0,
+      "seconds": 1.3,
+      "sha256": "304172dcfd16ee15d2e638e6df03ed615be69940244a057c2f26afdce8d54605"
+    },
+    {
+      "path": "course/modules/M5/practice/practice_5_3.py",
+      "exit_code": 0,
+      "seconds": 1.94,
+      "sha256": "4fa52adf54276591ba69025b37ccd666b744a5e121d0c6c66a70b29e8cb192e6"
+    },
+    {
+      "path": "course/modules/M5/practice/practice_5_4.py",
+      "exit_code": 0,
+      "seconds": 6.01,
+      "sha256": "46b102d04c7cea45559a80fd5e45bd1bd64a702dbe626fcb721f75c69c11b3db"
+    },
+    {
+      "path": "course/modules/M5/practice/practice_5_5.py",
+      "exit_code": 0,
+      "seconds": 11.46,
+      "sha256": "312a8eefa827ca9b720dea9de947df3058d5948e909e59bd2d32a908883e2878"
+    },
+    {
+      "path": "course/modules/M6/practice/practice_6_1.py",
+      "exit_code": 0,
+      "seconds": 1.18,
+      "sha256": "f82d8a5ef7a346e51a62368f97b35ba0acc5c29d53d521425849b95f4274e015"
+    },
+    {
+      "path": "course/modules/M6/practice/practice_6_2.py",
+      "exit_code": 0,
+      "seconds": 0.93,
+      "sha256": "7337b7bf9bb013a4774ae687b97bff0c839d1b1bc6b298c156d2ced34a706a76"
+    },
+    {
+      "path": "course/modules/M6/practice/practice_6_3.py",
+      "exit_code": 0,
+      "seconds": 1.63,
+      "sha256": "c3ed2aa050ceed5be1c4ea4e0e1d0bc5a5bdfc6eac86b67bc33fb3dacb13cf32"
+    },
+    {
+      "path": "course/modules/M6/practice/practice_6_4.py",
+      "exit_code": 0,
+      "seconds": 1.12,
+      "sha256": "569cdf18c5a219d5b4ad35164d784f8117f09d3828772517a21fbf2c06c9391c"
+    },
+    {
+      "path": "course/modules/M6/practice/practice_6_5.py",
+      "exit_code": 0,
+      "seconds": 1.0,
+      "sha256": "019632bd55b5700c899214a8e9eebe005a53c4a382f252deda4427150dd73a11"
+    },
+    {
+      "path": "course/modules/M7/practice/practice_7_1.py",
+      "exit_code": 0,
+      "seconds": 1.53,
+      "sha256": "f9457b8579507a39904dbb62a5bb55166a42adebde2677eb4fa9a08d133775b3"
+    },
+    {
+      "path": "course/modules/M7/practice/practice_7_2.py",
+      "exit_code": 0,
+      "seconds": 2.59,
+      "sha256": "81708f1ae40edf6d4f2dfd1e76df8b4d21c802340ea48994591cc582c260afaf"
+    },
+    {
+      "path": "course/modules/M7/practice/practice_7_3.py",
+      "exit_code": 0,
+      "seconds": 4.76,
+      "sha256": "8cff4fcf7adc870536af4beb47e607b227adef26018f8ff718cd79179f36430b"
+    },
+    {
+      "path": "course/modules/M7/practice/practice_7_4.py",
+      "exit_code": 0,
+      "seconds": 1.06,
+      "sha256": "425c843de0494d80eb018a408614d3281e49f17e39c3e3cfa1e0c2813ac32a44"
+    }
+  ],
+  "date": "2026-09-21",
+  "platform": "Darwin arm64",
+  "environment": "Python 3.13 venv with pinned dependencies; temporary writable library caches",
+  "launch_directory": "empty directory outside repository; remained empty after all 35 practices",
+  "regression_tests": {
+    "passed": 77,
+    "failed": 0
+  },
+  "links": "passed",
+  "mirror": "0 mismatches",
+  "diff_whitespace": "passed",
+  "figure_generators": [
+    {
+      "module": "M1",
+      "script": "scripts/figures/make_visuals_m1.py",
+      "returncode": 0,
+      "duration_seconds": 9.35
+    },
+    {
+      "module": "M2",
+      "script": "scripts/figures/make_visuals_m2.py",
+      "returncode": 0,
+      "duration_seconds": 10.642
+    },
+    {
+      "module": "M2",
+      "script": "scripts/figures/make_visuals_m2b.py",
+      "returncode": 0,
+      "duration_seconds": 3.758
+    },
+    {
+      "module": "M3",
+      "script": "scripts/figures/make_visuals_m3.py",
+      "returncode": 0,
+      "duration_seconds": 37.31
+    },
+    {
+      "module": "M4",
+      "script": "scripts/figures/make_visuals_m4.py",
+      "returncode": 0,
+      "duration_seconds": 1.305
+    },
+    {
+      "module": "M5",
+      "script": "scripts/figures/make_visuals_m5.py",
+      "returncode": 0,
+      "duration_seconds": 14.976
+    },
+    {
+      "module": "M6",
+      "script": "scripts/figures/make_visuals_m6.py",
+      "returncode": 0,
+      "duration_seconds": 1.23
+    },
+    {
+      "module": "M7",
+      "script": "scripts/figures/make_visuals_m7.py",
+      "returncode": 0,
+      "duration_seconds": 1.064
+    },
+    {
+      "module": "nav",
+      "script": "scripts/figures/make_visuals_nav.py",
+      "returncode": 0,
+      "duration_seconds": 0.323
+    },
+    {
+      "module": "cases",
+      "script": "scripts/figures/make_visuals_cases.py",
+      "returncode": 0,
+      "duration_seconds": 0.293
+    },
+    {
+      "module": "roadmap",
+      "script": "scripts/figures/make_roadmap.py",
+      "returncode": 0,
+      "duration_seconds": 0.315
+    }
+  ]
+}

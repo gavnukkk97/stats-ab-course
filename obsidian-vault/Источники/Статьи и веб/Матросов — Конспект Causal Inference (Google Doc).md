@@ -18,5 +18,5 @@ tags: [causal-inference, конспект]
 [[Propensity score]], [[IPW]], [[Инструментальная переменная]], [[DiD]], [[Synthetic control]], [[Doubly robust]], [[Double ML]], [[Potential outcomes]], [[Конфаундер]], [[Коллайдер]], [[DAG]], [[ATE]], [[RDD]], [[Interrupted time series]]
 
 ## Оригинал
-- Полный текст: [[causal-inference-doc-full]] / конспект-карта: [[causal-inference-doc]] (в Материалы/)
+- Полный текст: авторский конспект не включён в репозиторий; доступные первоисточники перечислены в [указателе курса](../../../course/SOURCES.md)
 - Исходник: Google Doc «Causal Inference» из канала [[abba_testing]] (файл Causal Inference.docx)

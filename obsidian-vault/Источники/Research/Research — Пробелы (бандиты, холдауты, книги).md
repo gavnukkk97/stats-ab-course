@@ -12,6 +12,6 @@ tags: [research, бандиты, холдауты]
 
 Закрывает: [[Многорукие бандиты]], [[Thompson sampling]], [[Expected loss]], [[Winner's curse]], [[Холдаут-группа]], [[Кумулятивные эффекты фич]], [[Экономика экспериментов]].
 
-Полный текст: [[research-gaps]] (копия в Материалы/). Ключевые статьи отдельными заметками: [[Russo et al — Thompson Sampling Tutorial]], [[Stucchio — Easy Evaluation of Decision Rules]], [[Lee & Shen — Winner's Curse (Airbnb)]], [[Airbnb — Selection Bias in Online Experimentation]], [[Eppo — The Whole Is Less Than the Sum]], [[Facure — Causal Inference for the Brave and True]], [[Feit & Berman — Test & Roll]].
+Полный текст: неопубликованный авторский конспект (не доступен в репозитории) (копия в Материалы/). Ключевые статьи отдельными заметками: [[Russo et al — Thompson Sampling Tutorial]], [[Stucchio — Easy Evaluation of Decision Rules]], [[Lee & Shen — Winner's Curse (Airbnb)]], [[Airbnb — Selection Bias in Online Experimentation]], [[Eppo — The Whole Is Less Than the Sum]], [[Facure — Causal Inference for the Brave and True]], [[Feit & Berman — Test & Roll]].
 
 Модули: [[М5 Байесовские методы]] (5.3–5.4), [[М4 АБ на практике]] (4.5), [[М6 Каузальный вывод]].
