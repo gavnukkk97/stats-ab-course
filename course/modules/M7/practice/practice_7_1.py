@@ -200,10 +200,10 @@ class SplitService:
 
     def __init__(self, n_buckets: int = N_BUCKETS):
         self.n_buckets = n_buckets
-        self.domains: dict[str, dict] = {}   # домен: доля трафика + список слоёв
-        self.layers: dict[str, dict] = {}    # слой: соль + [(имя, доля, варианты)]
+        self.domains: "dict[str, dict]" = {}   # домен: доля трафика + список слоёв
+        self.layers: "dict[str, dict]" = {}    # слой: соль + [(имя, доля, варианты)]
         self.version = 0
-        self.change_log: list[str] = []
+        self.change_log: "list[str]" = []
 
     # -- устройство -----------------------------------------------------
     def add_domain(self, name: str, traffic: float = 1.0) -> None:
@@ -212,7 +212,7 @@ class SplitService:
         self.domains[name] = {"traffic": traffic, "layers": [], "salt": f"domain_{name}"}
         self._bump(f"домен {name} ({traffic:.0%} трафика)")
 
-    def add_layer(self, name: str, domain: str, salt: str | None = None) -> None:
+    def add_layer(self, name: str, domain: str, salt: "str | None" = None) -> None:
         self.layers[name] = {"domain": domain, "salt": salt or f"salt_{name}", "alloc": []}
         self.domains[domain]["layers"].append(name)
         self._bump(f"слой {name} в домене {domain}, соль {self.layers[name]['salt']}")
@@ -227,7 +227,7 @@ class SplitService:
                               "domains": self.domains, "version": self.version})
 
     # -- аллокация и конфликты -------------------------------------------
-    def free_ranges(self, layer: str) -> list[tuple[int, int]]:
+    def free_ranges(self, layer: str) -> "list[tuple[int, int]]":
         busy = sorted((a, a + size) for _, a, size, _ in self.layers[layer]["alloc"])
         free, pos = [], 0
         for a, b in busy:
@@ -238,7 +238,7 @@ class SplitService:
             free.append((pos, self.n_buckets))
         return free
 
-    def add_experiment(self, layer: str, name: str, share: float, n_variants: int = 2) -> tuple[int, int]:
+    def add_experiment(self, layer: str, name: str, share: float, n_variants: int = 2) -> "tuple[int, int]":
         if any(name == existing for config in self.layers.values()
                for existing, _, _, _ in config["alloc"]):
             raise ValueError(f"Эксперимент {name} уже существует; ID должен быть уникальным")
@@ -260,8 +260,8 @@ class SplitService:
             f" Занято: {taken or '—'}")
 
     # -- назначение -------------------------------------------------------
-    def assign(self, layer: str, user_id: str | None = None, cookie: str | None = None,
-               date: str | None = None, algo: str = "md5") -> str | None:
+    def assign(self, layer: str, user_id: "str | None" = None, cookie: "str | None" = None,
+               date: "str | None" = None, algo: str = "md5") -> "str | None":
         """Независимые хэши допуска в домен и назначения внутри слоя.
 
         Без устойчивого ключа не включаем пользователя. cookie+date означает

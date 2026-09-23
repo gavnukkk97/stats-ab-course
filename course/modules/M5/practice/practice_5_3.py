@@ -90,8 +90,9 @@ def expected_loss_grid(aa, ba, ab, bb):
     m = aa / (aa + ba)
     s = np.sqrt(aa * ba / (aa + ba) ** 2 / (aa + ba + 1))
     g = np.linspace(max(1e-9, m - 12 * s), min(1 - 1e-9, m + 12 * s), 400_001)
-    t1 = np.trapezoid(g * stats.beta.cdf(g, ab, bb) * stats.beta.pdf(g, aa, ba), g)
-    t2 = np.trapezoid(g * stats.beta.sf(g, aa, ba) * stats.beta.pdf(g, ab, bb), g)
+    trap = getattr(np, "trapezoid", None) or np.trapz  # numpy 2.x / 1.x
+    t1 = trap(g * stats.beta.cdf(g, ab, bb) * stats.beta.pdf(g, aa, ba), g)
+    t2 = trap(g * stats.beta.sf(g, aa, ba) * stats.beta.pdf(g, ab, bb), g)
     return t1 - t2
 
 
