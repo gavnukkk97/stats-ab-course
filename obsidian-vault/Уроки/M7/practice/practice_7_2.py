@@ -251,7 +251,7 @@ results.append({"путь": "n/sum/sumsq (точно)", "строк на ана�
                 "|Δlift| к поюзерному": f"{abs(exact_lift-lift_user):.3%}"})
 
 # ratio-метрика «GMV за сессию»: поюзерный дельта-метод vs по 1000 бакетам
-def delta_ratio(dfa: pd.DataFrame, key: str | None = None) -> tuple[float, float, float, float]:
+def delta_ratio(dfa: pd.DataFrame, key: "str | None" = None) -> "tuple[float, float, float, float]":
     """Дельта-метод для ratio = ΣS/ΣC; key: колонка бакета или None (поюзерно)."""
     outs = {}
     for name, df in (("A", dfa[~dfa.group_b]), ("B", dfa[dfa.group_b])):

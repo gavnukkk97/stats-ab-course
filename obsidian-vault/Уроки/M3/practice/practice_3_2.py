@@ -26,6 +26,8 @@ e_ij ~ N(0, s^2) — шум заказа. Заказы одного юзера �
 # corr = (exp(tau^2)-1)/(exp(tau^2+s^2)-1) — посчитаем и сверим.
 
 # %%
+from __future__ import annotations
+
 import math
 
 import matplotlib

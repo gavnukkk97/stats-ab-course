@@ -364,4 +364,75 @@ fig.suptitle("Два мира: фиксированный горизонт пр�
              fontsize=12, fontweight="bold")
 fig.tight_layout(); fig.savefig(OUTPUT_DIR / "v45_peeking_sequential.png", bbox_inches="tight"); plt.close(fig)
 
-print("Готово: v32–v45 (14 визуализаций) в", OUTPUT_DIR)
+
+
+# ============================================================
+# v93. Sequential testing в одной карточке
+# (по мотивам серии stats_for_science, части 1-3: посты 237, 241, 252)
+# ============================================================
+_placed93 = []  # (имя, rect, text) для автопроверки layout
+
+def _card93(name, x, y, w, h, text, fc, fs=9.0):
+    ax93.add_patch(plt.Rectangle((x, y), w, h, fc=fc, ec="#555", lw=1.8))
+    t = ax93.text(x + w/2, y + h/2, text, ha="center", va="center",
+                  fontsize=fs, color="#222", linespacing=1.55)
+    _placed93.append((name, (x, y, w, h), t))
+
+fig, ax93 = plt.subplots(figsize=(13.8, 6.6))
+ax93.set_xlim(0, 30.6); ax93.set_ylim(0, 15.2); ax93.axis("off")
+
+ax93.text(15.3, 14.6, "Sequential testing в одной карточке: право смотреть в любой момент покупают консервативностью",
+          ha="center", fontsize=13, fontweight="bold")
+ax93.text(15.3, 13.95, "по мотивам серии stats_for_science (Е. Убогоева): часть 1 — история (пост 237), часть 2 — матчасть (241), часть 3 — шпаргалка (252)",
+          ha="center", fontsize=9.5, color="#555", style="italic")
+
+_card93("problem", 0.5, 1.8, 9.6, 11.6,
+        "ПОЧЕМУ НЕЛЬЗЯ \"ПО ОЩУЩЕНИЯМ\"\n\n"
+        "стоп при первом p<0,05 —\nэто максимум по взглядам,\nа не одна проверка\n\n"
+        "α растёт: 1 взгляд — 5%\n2 взгляда — 8%\n5 взглядов — 14%\nежедневно 2 недели — 22%\n"
+        "(Armitage 1969; симуляции канала)\n\n"
+        "ранний прокрас = удачно\nпошедший шум: оценка эффекта\nзавышена ~×2 (type M)\n\n"
+        "Феллер, 1940: при бесконечном\nподглядывании любую границу\nпересекут (закон повторного\nлогарифма) — так деби",
+        "#FFE9E9")
+
+_card93("ways", 10.5, 1.8, 9.6, 11.6,
+        "ДВА ПРАВИЛЬНЫХ ПУТИ\n\n"
+        "А. Расписание трат (group sequential)\n"
+        "взгляды и границы — ДО запуска\n"
+        "O'Brien-Fleming: z 4,0→2,0,\nmax n +3%\n"
+        "Pocock: z≈2,36 константа,\nmax n до +20%\n"
+        "Lan-DeMets: α-бюджет по функции\nвремени, расписание гибче\n\n"
+        "Б. Границы на каждый день (always-valid)\n"
+        "mSPRT: Λ — мартингейл под H0\n→ неравенство Вилля\n"
+        "смотреть можно когда угодно;\nна дашборд — always-valid p\n"
+        "τ ≈ MDE из истории тестов",
+        "#E8F0FE")
+
+_card93("price", 20.5, 1.8, 9.6, 11.6,
+        "ЧТО ЗА ЭТО БУДЕТ\n\n"
+        "на эффекте = MDE НЕ быстрее:\nмедиана 33 против 32 дней\n\n"
+        "макс. выборка +3…+20%\n(это НЕ CUPED: дисперсию\nне уменьшает — не ставить\nв один ряд)\n\n"
+        "выигрыш: 2–4×MDE и вред —\nдни вместо недель горизонта\n\n"
+        "оценка эффекта на остановке\nсмещена → репортить по\nкорректной процедуре\n\n"
+        "протокол — в дизайн-док ДО запуска",
+        "#FFF8E1")
+
+fig.savefig(OUTPUT_DIR / "v93_sequential_card.png", bbox_inches="tight", dpi=150)
+
+# автопроверка: тексты внутри своих карточек
+fig.canvas.draw()
+_inv93 = ax93.transData.inverted()
+_problems93 = []
+for _name, (_x, _y, _w, _h), _t in _placed93:
+    _bb = _t.get_window_extent(fig.canvas.get_renderer())
+    (_x0, _y0), (_x1, _y1) = _inv93.transform([(_bb.x0, _bb.y0), (_bb.x1, _bb.y1)])
+    if _x0 < _x - 0.05 or _x1 > _x + _w + 0.05:
+        _problems93.append(f"[{_name}] шире карточки: [{_x0:.2f}, {_x1:.2f}] vs [{_x:.2f}, {_x + _w:.2f}]")
+    if _y0 < _y - 0.05 or _y1 > _y + _h + 0.05:
+        _problems93.append(f"[{_name}] выше карточки: [{_y0:.2f}, {_y1:.2f}] vs [{_y:.2f}, {_y + _h:.2f}]")
+if _problems93:
+    raise SystemExit("LAYOUT FAIL v93:\n" + "\n".join(_problems93))
+plt.close(fig)
+print("v93_sequential_card.png: LAYOUT OK")
+
+print("Готово: v32–v45 + v93 в", OUTPUT_DIR)
